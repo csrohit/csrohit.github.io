@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/hero-bg.jpg);
@@ -10,4 +15,37 @@ header {
     background-position: center;
     height: 100vh;
 
+}
+
+/*     NAVIGATION BAR     */
+nav{
+    float: right;
+}
+#main-nav{
+/*    float: right;*/
+/*    background-color: wheat;*/
+}
+nav li{
+    display: inline-block;
+    margin-right: 1%;
+}
+
+#main-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.hero-text{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding: 2%
+}
+
+.hero-text h1{
+    color: #fff;
+    font-size: 500%;
+    font-weight: 300;
 }

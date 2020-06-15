@@ -1,0 +1,279 @@
+/* IMport fonts */
+@font-face{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/Dosis-ExtraLight.ttf')
+}
+@font-face{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Dosis-Regular.ttf')
+}
+@font-face{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./fonts/Dosis-SemiBold.ttf');
+}
+
+/*    General styles    */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray: #363636;
+    --black: #000000;
+    --accent: #6a097d;
+}
+html {
+    font-size: 20px;
+    font-family: 'Dosis';
+    font-weight: 400;
+  scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body {
+/*    background: #e6e9e9;*/
+/*    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(244, 244, 244) 100%);*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: var(--gray);
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
+h1, h2, h3 {
+    color: var(--black);
+    line-height: 1.3;
+}
+h1{
+    font-size: 6em;
+    font-weight: 200;
+}
+h2{
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+h3{
+    color: var(--accent);
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+h4{
+    line-height: 1em;
+}
+
+a {
+    color: #0083e8;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    margin-top: 1em;
+}
+img{
+    max-width: 90%;
+    margin-left: 5%;;
+}
+.btn{
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0.51em;
+    cursor: pointer;
+    margin: auto;
+    font-size: 1em;
+}
+.btn-primary{
+    background-color: var(--accent);
+    color: #fff;
+}
+
+section{
+    padding: 2em;
+    background-color: #fff;
+    margin: 2em;
+    border-radius: .5em;
+    box-shadow: 0px 5px 20px 4px #d8d8d8;
+}
+
+
+
+
+
+/*---------------------------------
+    HomePage
+---------------------------------*/
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('header-bg.jpg') red;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: .5em;
+}
+nav a{
+    color: #fff;
+/*    margin-left: .5em;*/
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+#hero-text{
+    align-self: flex-end; 
+    justify-content: flex-end;
+    color: #fff;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+header h1{
+    color: #fff;
+}
+
+
+
+
+
+/*RESUME*/
+
+
+#personal-details{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+#img-container{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+#img-container img{ 
+    max-height: 100%;
+    max-width: 90%;
+    margin:auto;
+}
+#details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+#resume-content > div{
+    margin-bottom: 2em;
+}
+#resume-nav{
+    min-width: 15em;
+    padding: 1em;
+}
+.education-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 .5em;
+}
+
+.course{
+/*    border-bottom: 5px solid rgba(139, 139, 139, 0.63);*/
+    border-bottom: 2px solid var(--accent);
+    padding: 1em .5em;
+}
+
+/* SKILLS section */
+#skill-container{
+    display: flex;
+    flex-flow: row wrap;
+/*    justify-content: ;*/
+    align-content: stretch;
+}
+.skill{
+    flex-grow: 1;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    border:solid 1px rgba(216, 216, 216, 0.3);
+    box-shadow: 0px 5px 1em 4px rgba(216, 216, 216, 0.29);
+}
+.skill svg{
+    margin-top: .5em;
+    stroke: #456789;
+}
+.separator{
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+    color: var(--accent);
+}
+
+.framework{
+    width: 100%;
+    border-radius: .5em;
+    border: 1px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: .5em;
+    margin-bottom: 1em;
+}
+.progress-bar{
+    padding: 1em;
+    background-color: rgba(213, 0, 255, 0.14);
+    border-radius: .3em;
+}
+
+/*circle*/
+.progress-ring__circle{
+stroke-dasharray: 132.726px, 132.726px;
+stroke-dashoffset: 10.372px;
+    fill: transparent;
+    stroke-width: 4px;
+    stroke: var(--accent)
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    section{
+        width: 90%;
+    }
+}

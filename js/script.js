@@ -4,13 +4,13 @@ const max = 326;
 //   $('#education').addClass('new againNew rohit');
 // })
 
-// new Waypoint({
-//   element: document.getElementById("profile-img"),
-//   handler: function () {
-//     $("#profile-img").addClass("animated fadeIn");
-//   },
-//   offset: "50%",
-// });
+new Waypoint({
+  element: document.getElementById("profile-img"),
+  handler: function () {
+    $("#profile-img").addClass("animated fadeIn");
+  },
+  offset: "50%",
+});
 
 
 let skills = document.getElementsByClassName('skill');

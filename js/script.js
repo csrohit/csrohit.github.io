@@ -1,14 +1,36 @@
-window.addEventListener('DOMContentLoaded', ()=>{
-  $('#education').addClass('new againNew rohit');
-})
+const max = 326;
 
-var waypoint = new Waypoint({
-  element: document.getElementById("profile-img"),
-  handler: function () {
-    $("#profile-img").addClass("animated fadeIn");
-  },
-  offset: "50%",
-});
+// window.addEventListener('DOMContentLoaded', ()=>{
+//   $('#education').addClass('new againNew rohit');
+// })
+
+// new Waypoint({
+//   element: document.getElementById("profile-img"),
+//   handler: function () {
+//     $("#profile-img").addClass("animated fadeIn");
+//   },
+//   offset: "50%",
+// });
+
+
+let skills = document.getElementsByClassName('skill');
+for(let i=0; i< skills.length; i++){
+  new Waypoint({
+    element: skills[i],
+    handler: function(){
+      let progress = this.element.querySelector('svg').getAttribute('data-progress')/100;
+      this.element.querySelector('.progress-ring__circle').setAttribute('style', 'stroke-dashoffset: ' + -(max + progress*max) + "px");
+    },
+    offset: '50%'
+  })
+}
+
+/* Skill waypoint */
+// new Waypoint({
+//   element: document.getElementById()
+// })
+
+
 
 let domElement = function (selector) {
   this.selector = selector || null;

@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b pasta -d build",
+    "deploy": "gh-pages -d build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
     "test": "react-scripts test",

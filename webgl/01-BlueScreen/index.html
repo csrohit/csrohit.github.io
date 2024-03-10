@@ -15,15 +15,21 @@
     <link rel="manifest" href="/manifest.json" />
     <link rel="preload" href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
+    <script src="bluescreen.js" type="module"></script>
     <link href="/static/css/main.css" rel="stylesheet">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+    integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+    crossorigin="anonymous"
+    defer></script>
+
 </head>
 
 <body>
-    <ul>
-        <li><a href="./webgl">WebGL</a></li>
-    </ul>
-
-
+<div class="demo-container">
+    <h1 class="demo-title">Blue Screen in WebGL</h1>
+</div>
+<canvas id="glcanvas" width="640" height="480"></canvas>
 </body>
 
 </html>
